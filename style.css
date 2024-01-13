@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#first{
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.container{
+    background-color: rgb(247, 247, 236);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#board{
+    width: 90vmin;
+    height: 90vmin;
+    background: linear-gradient(rgb(157, 167, 130),rgb(108, 164, 70));
+    border: 2px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.food{
+    background-color: red;
+}
+
+.head{
+    background-color: purple;
+}
